@@ -9,13 +9,13 @@ class Navbar extends Component {
         <div>
           <ul>
             <li>
-              <Link to="/">Workouts</Link>
+              <Link to="/login">User Login</Link>
+            </li>
+            <li>
+              <Link to="/workouts">Workouts</Link>
             </li>
             <li>
               <Link to="/add">Add Workout</Link>
-            </li>
-            <li>
-              <Link to="/user">Create User</Link>
             </li>
           </ul>
         </div>

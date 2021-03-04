@@ -6,7 +6,8 @@ import Navbar from "./components/navbar";
 import WorkoutList from "./components/workout-list";
 import EditWorkout from "./components/edit-workout";
 import AddWorkout from "./components/add-workout";
-import CreateUser from "./components/create-user";
+import UserLogin from "./components/user-login";
+import LandingPage from "./components/landing-page";
 
 function App() {
   return (
@@ -14,11 +15,11 @@ function App() {
       <div className="App">
         <Navbar />
         <br />
-
-        <Route path="/" exact component={WorkoutList} />
+        <Route path="/" exact component={LandingPage} />
+        <Route path="/workouts" component={WorkoutList} />
         <Route path="/edit/:id" component={EditWorkout} />
         <Route path="/add" component={AddWorkout} />
-        <Route path="/user" component={CreateUser} />
+        <Route path="/login" component={UserLogin} />
       </div>
     </Router>
   );
