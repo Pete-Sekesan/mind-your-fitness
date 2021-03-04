@@ -15,14 +15,28 @@ nav,
 footer {
   padding: 1% 0;
   background-color: #aaa;
+
 }
 
-nav {
-  position:relative;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 10;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7rem 2rem;
+  z-index: 1;
+  width: 100%;
+  opacity: 0.9;
+  margin-bottom: 1rem;
+}
+
+.navbar ul {
+  display: flex;
+}
+.navbar a {
+  color: #fff;
+  padding: 0.45rem;
+  margin: 0 0.25rem;
+  text-decoration: none;
 }
 
 header {
@@ -46,4 +60,13 @@ p {
 
 p + p {
   margin-top: 15px;
+}
+
+ul {
+   list-style-type: none; 
+   padding: 0; 
+   margin: 0; 
+   display: inline-flex;
+   margin: 0;
+  padding: 0;
 }
