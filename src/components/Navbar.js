@@ -9,9 +9,6 @@ class Navbar extends Component {
         <div>
           <ul>
             <li>
-              <Link to="/login">User Login</Link>
-            </li>
-            <li>
               <Link to="/workouts">Workouts</Link>
             </li>
             <li>

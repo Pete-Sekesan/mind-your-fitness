@@ -13,6 +13,8 @@ class UserLogin extends Component {
                 <input type="text" required />
                 <label>Password:</label>
                 <input type="password" required />
+                <br />
+                <button type="submit">Log In</button>
               </div>
             </form>
           </div>
