@@ -2,12 +2,12 @@ import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import "./App.css";
 
-import Navbar from "./components/navbar";
-import WorkoutList from "./components/workout-list";
-import EditWorkout from "./components/edit-workout";
-import AddWorkout from "./components/add-workout";
-import UserLogin from "./components/user-login";
-import LandingPage from "./components/landing-page";
+import Navbar from "./components/Nav/navbar";
+import Dashboard from "./components/Dashboard/dashboard";
+import EditWorkout from "./components/EditWorkout/edit-workout";
+import AddWorkout from "./components/AddWorkout/add-workout";
+import UserLogin from "./components/Login/user-login";
+import LandingPage from "./components/Landing/landing-page";
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
         <Navbar />
         <br />
         <Route path="/" exact component={LandingPage} />
-        <Route path="/workouts" component={WorkoutList} />
+        <Route path="/dashboard" component={Dashboard} />
         <Route path="/edit/:id" component={EditWorkout} />
         <Route path="/add" component={AddWorkout} />
         <Route path="/login" component={UserLogin} />

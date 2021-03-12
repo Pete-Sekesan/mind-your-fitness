@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./edit-workout.css";
 
 class EditWorkout extends Component {
   render() {

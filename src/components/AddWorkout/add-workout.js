@@ -1,4 +1,5 @@
 import React, { Component, Fragment } from "react";
+import "./add-workout.css";
 
 class AddWorkout extends Component {
   render() {

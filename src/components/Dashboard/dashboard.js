@@ -1,6 +1,7 @@
 import React, { Component } from "react";
+import "./dashboard.css";
 
-class WorkoutList extends Component {
+class Dashboard extends Component {
   render() {
     return (
       <section>
@@ -15,4 +16,4 @@ class WorkoutList extends Component {
   }
 }
 
-export default WorkoutList;
+export default Dashboard;
