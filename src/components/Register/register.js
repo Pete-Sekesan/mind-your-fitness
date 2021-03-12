@@ -1,28 +1,24 @@
 import React, { Component, Fragment } from "react";
-import { Link } from "react-router-dom";
-import "./user-login.css";
 
-class UserLogin extends Component {
+import "./register.css";
+
+class Register extends Component {
   render() {
     return (
       <Fragment>
         <section>
           <div>
-            <p>User Login</p>
+            <p>Register</p>
             <form>
               <div>
                 <label>Username:</label>
                 <input type="text" required />
                 <label>Password:</label>
                 <input type="password" required />
+                <label>Confirm Password:</label>
+                <input type="password" required />
                 <br />
-                <button type="submit">Log In</button>
-                <br />
-                <br />
-                <br />
-                <button className="start-btn">
-                  <Link to="/register">New User? Register Here</Link>
-                </button>
+                <button type="submit">Sign Up</button>
               </div>
             </form>
           </div>
@@ -32,4 +28,4 @@ class UserLogin extends Component {
   }
 }
 
-export default UserLogin;
+export default Register;
