@@ -6,7 +6,6 @@ import "./navbar.css";
 class Navbar extends Component {
   logout = () => {
     TokenService.clearAuthToken();
-    this.props.history.push("/");
   };
   render() {
     return (
@@ -20,10 +19,11 @@ class Navbar extends Component {
                 <li>
                   <Link to="/dashboard">Dashboard</Link>
                 </li>
+
                 <li>
-                  <button type="submit" onClick={() => this.logout()}>
+                  <Link to="/" onClick={() => this.logout()}>
                     Logout
-                  </button>
+                  </Link>
                 </li>
               </>
             ) : (
