@@ -12,9 +12,10 @@ class UserLogin extends Component {
       user: userName.value,
       password: password.value,
     };
-    fetch(`${API_BASE_URL}/api/auth/login`, {
+    /*fetch(`${API_BASE_URL}/api/auth/login`, {
       method: "POST",
       headers: {
+        Accept: "application/json",
         "Content-Type": "application/json",
       },
       body: JSON.stringify(newUser),
@@ -24,7 +25,9 @@ class UserLogin extends Component {
         TokenService.saveAuthToken(loginResponse.authToken);
         this.props.history.push("/dashboard");
       })
-      .catch((err) => console.error(err));
+      .catch((err) => console.error(err));*/
+    TokenService.saveAuthToken("4hg3422hg34334566h");
+    this.props.history.push("/dashboard");
   };
 
   render() {
@@ -36,9 +39,19 @@ class UserLogin extends Component {
             <form className="login-form" onSubmit={this.handleLogin}>
               <div>
                 <label>Username:</label>
-                <input type="text" required name="userName" />
+                <input
+                  type="text"
+                  required
+                  name="userName"
+                  value="demo@demo.com"
+                />
                 <label>Password:</label>
-                <input type="password" required name="password" />
+                <input
+                  type="password"
+                  required
+                  name="password"
+                  value="P@ssword1234"
+                />
                 <br />
                 <button type="submit">Log In</button>
                 <br />
