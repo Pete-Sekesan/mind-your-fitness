@@ -10,7 +10,7 @@ class Navbar extends Component {
         <div>
           <ul>
             <li>
-              <Link to="/dashboard">Dashboard</Link>
+              <Link to="/register">Register</Link>
             </li>
             <li>
               <Link to="/login">Log In</Link>

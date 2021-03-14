@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from "react";
 import { Link } from "react-router-dom";
-import TokenService from "../services/token-service";
-import { API_BASE_URL } from "../config";
+import TokenService from "../../services/token-service";
+import { API_BASE_URL } from "../../config";
 import "./user-login.css";
 
 class UserLogin extends Component {
@@ -12,19 +12,19 @@ class UserLogin extends Component {
       user: userName.value,
       password: password.value,
     };
-    fetch(
-      `${API_BASE_URL}/api/auth/login`, {
-        method: "POST",
+    fetch(`${API_BASE_URL}/api/auth/login`, {
+      method: "POST",
       headers: {
-          'Accept': "application/json",
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(newUser);
-    }).then(res => res.json()).then(loginResponse => {
-      TokenService.saveAuthToken(loginResponse.authToken)
-      this.props.history.push('/dashboard');
-    }).catch(err =>console.error(err));
-   
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(newUser),
+    })
+      .then((res) => res.json())
+      .then((loginResponse) => {
+        TokenService.saveAuthToken(loginResponse.authToken);
+        this.props.history.push("/dashboard");
+      })
+      .catch((err) => console.error(err));
   };
 
   render() {
