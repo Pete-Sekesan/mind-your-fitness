@@ -7,9 +7,9 @@ import "./user-login.css";
 class UserLogin extends Component {
   handleLogin = (e) => {
     e.preventDefault();
-    const { userName, password } = e.target;
+    const { username, password } = e.target;
     const newUser = {
-      user: userName.value,
+      username: username.value,
       password: password.value,
     };
     /*fetch(`${API_BASE_URL}/api/auth/login`, {
@@ -42,7 +42,7 @@ class UserLogin extends Component {
                 <input
                   type="text"
                   required
-                  name="userName"
+                  name="username"
                   value="demo@demo.com"
                 />
                 <label>Password:</label>
