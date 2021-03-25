@@ -2,8 +2,11 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import TokenService from "../../services/token-service";
 import "./navbar.css";
+import Context from "../../Context";
 
 class Navbar extends Component {
+  static contextType = Context;
+
   logout = () => {
     TokenService.clearAuthToken();
   };
