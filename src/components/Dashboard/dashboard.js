@@ -16,13 +16,21 @@ class Dashboard extends Component {
       });
   }
   render() {
+    const { workouts = [] } = this.context;
     return (
       <section>
         <div>
-          <p>
-            Testing the workout list component. This should be where all logged
-            workouts reside.
-          </p>
+          <h3>Logged Workouts</h3>
+          <table>
+            <thread>
+              <tr>
+                <th>Workout</th>
+                <th>Duration</th>
+                <th>Date</th>
+              </tr>
+            </thread>
+            <tbody> Testing</tbody>
+          </table>
         </div>
       </section>
     );

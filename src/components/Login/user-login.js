@@ -1,33 +1,33 @@
 import React, { Component, Fragment } from "react";
 import { Link } from "react-router-dom";
 import TokenService from "../../services/token-service";
+import Context from "../../Context";
 import { API_BASE_URL } from "../../config";
+import AuthAPIService from "../../services/auth-api-service";
+
 import "./user-login.css";
 
 class UserLogin extends Component {
+  state = {
+    error: null,
+  };
+  static contextTypes = Context;
+
   handleLogin = (e) => {
     e.preventDefault();
     const { username, password } = e.target;
-    const newUser = {
+    const user = {
       username: username.value,
       password: password.value,
     };
-    /*fetch(`${API_BASE_URL}/api/auth/login`, {
-      method: "POST",
-      headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(newUser),
-    })
-      .then((res) => res.json())
+    AuthAPIService.userLogin(user)
       .then((loginResponse) => {
         TokenService.saveAuthToken(loginResponse.authToken);
-        this.props.history.push("/dashboard");
+        this.props.history.push("./dashboard");
       })
-      .catch((err) => console.error(err));*/
-    TokenService.saveAuthToken("4hg3422hg34334566h");
-    this.props.history.push("/dashboard");
+      .catch((res) => {
+        this.setState({ error: res.error });
+      });
   };
 
   render() {
@@ -37,14 +37,10 @@ class UserLogin extends Component {
           <div>
             <p>User Login</p>
             <form className="login-form" onSubmit={this.handleLogin}>
+              {this.state.error && <p>{this.state.error}</p>}
               <div>
                 <label>Username:</label>
-                <input
-                  type="text"
-                  required
-                  name="username"
-                  value="demo@demo.com"
-                />
+                <input type="text" required name="username" value="Demo" />
                 <label>Password:</label>
                 <input
                   type="password"
