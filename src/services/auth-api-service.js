@@ -3,7 +3,7 @@ import TokenService from "./token-service";
 
 export default {
   postUser(user) {
-    return fetch(`${config.API_BASE_URL}/api/users`, {
+    return fetch(`${config.API_ENDPOINT}/api/users`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -16,7 +16,7 @@ export default {
 
   postWorkout(workout) {
     const token = "bearer" + TokenService.hasAuthToken();
-    return fetch(`${config.API_BASE_URL}/api/workouts`, {
+    return fetch(`${config.API_ENDPOINT}/api/workouts`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -30,7 +30,7 @@ export default {
 
   getWorkout(workout) {
     const token = "bearer" + TokenService.hasAuthToken();
-    return fetch(`${config.API_BASE_URL}/api/workouts`, {
+    return fetch(`${config.API_ENDPOINT}/api/workouts`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
