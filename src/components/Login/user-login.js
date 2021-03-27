@@ -2,7 +2,7 @@ import React, { Component, Fragment } from "react";
 import { Link } from "react-router-dom";
 import TokenService from "../../services/token-service";
 import Context from "../../Context";
-import { API_BASE_URL } from "../../config";
+import { API_ENDPOINT } from "../../config";
 import AuthAPIService from "../../services/auth-api-service";
 
 import "./user-login.css";
@@ -11,7 +11,6 @@ class UserLogin extends Component {
   state = {
     error: null,
   };
-  static contextTypes = Context;
 
   handleLogin = (e) => {
     e.preventDefault();
@@ -20,10 +19,14 @@ class UserLogin extends Component {
       username: username.value,
       password: password.value,
     };
+    this.setState({ error: null });
     AuthAPIService.userLogin(user)
       .then((loginResponse) => {
+        console.log("beforetoken");
         TokenService.saveAuthToken(loginResponse.authToken);
-        this.props.history.push("./dashboard");
+        console.log("after token");
+        this.props.history.push("/dashboard");
+        console.log("after dashboard push");
       })
       .catch((res) => {
         this.setState({ error: res.error });
@@ -35,27 +38,37 @@ class UserLogin extends Component {
       <Fragment>
         <section>
           <div>
-            <p>User Login</p>
+            <h1>User Login</h1>
             <form className="login-form" onSubmit={this.handleLogin}>
               {this.state.error && <p>{this.state.error}</p>}
               <div>
-                <label>Username:</label>
-                <input type="text" required name="username" value="Demo" />
-                <label>Password:</label>
+                <label htmlFor="username" className="label">
+                  Username:
+                </label>
+                <input
+                  type="text"
+                  required
+                  name="username"
+                  id="username"
+                  defaultValue="Demo"
+                />
+                <label htmlFor="password" className="label">
+                  Password:
+                </label>
                 <input
                   type="password"
+                  id="password"
                   required
                   name="password"
-                  value="P@ssword1234"
+                  defaultValue="P@ssword1234"
                 />
                 <br />
-                <button type="submit">Log In</button>
-                <br />
-                <br />
-                <br />
-                <button className="start-btn">
-                  <Link to="/register">New User? Register Here</Link>
+                <button type="submit" className="button-login">
+                  Log In
                 </button>
+                <br />
+                <br />
+                <br />
               </div>
             </form>
           </div>

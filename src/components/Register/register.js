@@ -33,11 +33,16 @@ class Register extends Component {
               {this.state.error && <p className="error">{this.state.error}</p>}
               <div>
                 <label>Username:</label>
-                <input type="text" required name="username" />
+                <input type="text" required name="username" id="username" />
                 <label>Password:</label>
-                <input type="password" required name="password" />
+                <input type="password" required name="password" id="password" />
                 <label>Confirm Password:</label>
-                <input type="password" required name="confirmPassword" />
+                <input
+                  type="password"
+                  required
+                  name="confirmPassword"
+                  id="confirmPassword"
+                />
                 <br />
                 <button type="submit">Sign Up</button>
               </div>

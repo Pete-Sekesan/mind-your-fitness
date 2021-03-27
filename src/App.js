@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import React, { Component, Fragment } from "react";
+import { Route } from "react-router-dom";
 import "./App.css";
 import Context from "./Context";
 import Navbar from "./components/Nav/navbar";
@@ -18,7 +18,7 @@ class App extends Component {
   };
   render() {
     return (
-      <Router>
+      <Fragment>
         <Context.Provider value={this.state}>
           <div className="App">
             <Route path="/" component={Navbar} />
@@ -30,7 +30,7 @@ class App extends Component {
             <Route path="/register" component={Register} />
           </div>
         </Context.Provider>
-      </Router>
+      </Fragment>
     );
   }
 }

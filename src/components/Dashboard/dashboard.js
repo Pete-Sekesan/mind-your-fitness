@@ -6,7 +6,7 @@ import "./dashboard.css";
 class Dashboard extends Component {
   static contextType = Context;
 
-  componentDidMount() {
+  /*ComponentDidMount() {
     AuthAPIService.getWorkout()
       .then((workouts) => {
         this.context.setWorkout(workouts);
@@ -14,9 +14,9 @@ class Dashboard extends Component {
       .catch((res) => {
         this.setState({ error: res.error });
       });
-  }
+  }*/
   render() {
-    const { workouts = [] } = this.context;
+    //const { workouts = [] } = this.context;
     return (
       <section>
         <div>
