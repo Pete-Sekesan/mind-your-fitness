@@ -13,7 +13,9 @@ class UserLogin extends Component {
   };
 
   handleLogin = (e) => {
+    console.log("before prevent");
     e.preventDefault();
+    console.log("after prevent");
     const { username, password } = e.target;
     const user = {
       username: username.value,
