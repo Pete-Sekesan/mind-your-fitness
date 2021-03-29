@@ -21,6 +21,8 @@ class UserLogin extends Component {
       username: username.value,
       password: password.value,
     };
+    console.log("*****" + username.value + "***" + password.value);
+
     this.setState({ error: null });
     AuthAPIService.userLogin(user)
       .then((loginResponse) => {

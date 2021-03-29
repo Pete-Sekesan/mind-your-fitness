@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import { Link } from "react-router-dom";
 import TokenService from "../../services/token-service";
 import "./navbar.css";
@@ -18,9 +18,13 @@ class Navbar extends Component {
         <div>
           <ul>
             {TokenService.hasAuthToken() ? (
-              <>
+              <Fragment>
                 <li>
                   <Link to="/dashboard">Dashboard</Link>
+                </li>
+
+                <li>
+                  <Link to="/add">Add Workout</Link>
                 </li>
 
                 <li>
@@ -28,16 +32,16 @@ class Navbar extends Component {
                     Logout
                   </Link>
                 </li>
-              </>
+              </Fragment>
             ) : (
-              <>
+              <Fragment>
                 <li>
                   <Link to="/login">Log In</Link>
                 </li>
                 <li>
                   <Link to="/register">Register</Link>
                 </li>
-              </>
+              </Fragment>
             )}
           </ul>
         </div>
