@@ -1,7 +1,5 @@
 import React, { Component, Fragment } from "react";
-import { Link } from "react-router-dom";
 import TokenService from "../../services/token-service";
-import Context from "../../Context";
 import { API_ENDPOINT } from "../../config";
 import AuthAPIService from "../../services/auth-api-service";
 
