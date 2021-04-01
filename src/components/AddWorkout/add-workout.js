@@ -7,7 +7,7 @@ class AddWorkout extends Component {
     console.log("This is handle submit");
     e.preventDefault();
     const { workout_name, duration, date_created } = e.target;
-    console.log("Handle submit" + e.target.value);
+    console.log("Handle submit" + workout_name.value);
 
     AuthAPIService.postWorkout({
       workout_name: workout_name.value,
@@ -33,7 +33,7 @@ class AddWorkout extends Component {
 
           <form onSubmit={this.handleSubmit}>
             <label>Exercise:</label>
-            <select id="workouts" name="workouts">
+            <select id="workouts" name="workout_name">
               <option value="Running">Running</option>
               <option value="Walking">Walking</option>
               <option value="Hiking">Hiking</option>
@@ -49,12 +49,12 @@ class AddWorkout extends Component {
 
             <div>
               <label>Duration (in minutes): </label>
-              <input type="number" min="0" required />
+              <input type="number" min="0" required name="duration" />
             </div>
 
             <div className="form-group">
               <label>Date: </label>
-              <input type="date" />
+              <input type="date" name="date_created" />
             </div>
             <div>
               <input type="submit" value="Add Workout" />
