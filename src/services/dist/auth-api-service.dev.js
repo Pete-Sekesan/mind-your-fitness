@@ -11,6 +11,7 @@ var _tokenService = _interopRequireDefault(require("./token-service"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
+/* eslint-disable */
 var _default = {
   postUser: function postUser(user) {
     return fetch("".concat(_config["default"].API_ENDPOINT, "/api/users"), {
@@ -26,7 +27,9 @@ var _default = {
     });
   },
   postWorkout: function postWorkout(workout) {
-    var token = "bearer" + _tokenService["default"].hasAuthToken();
+    console.log("inside post workout" + JSON.stringify(workout));
+
+    var token = "bearer " + _tokenService["default"].hasAuthToken();
 
     return fetch("".concat(_config["default"].API_ENDPOINT, "/api/workouts"), {
       method: "POST",
@@ -42,7 +45,7 @@ var _default = {
     });
   },
   getWorkout: function getWorkout(workout) {
-    var token = "bearer" + _tokenService["default"].hasAuthToken();
+    var token = "bearer " + _tokenService["default"].hasAuthToken();
 
     return fetch("".concat(_config["default"].API_ENDPOINT, "/api/workouts"), {
       method: "GET",

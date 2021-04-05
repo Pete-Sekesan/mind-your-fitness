@@ -1,3 +1,4 @@
+/* eslint-disable */
 import config from "../config";
 import TokenService from "./token-service";
 
@@ -15,7 +16,8 @@ export default {
   },
 
   postWorkout(workout) {
-    const token = "bearer" + TokenService.hasAuthToken();
+    console.log("inside post workout" + JSON.stringify(workout));
+    const token = "bearer " + TokenService.hasAuthToken();
     return fetch(`${config.API_ENDPOINT}/api/workouts`, {
       method: "POST",
       headers: {
@@ -29,7 +31,7 @@ export default {
   },
 
   getWorkout(workout) {
-    const token = "bearer" + TokenService.hasAuthToken();
+    const token = "bearer " + TokenService.hasAuthToken();
     return fetch(`${config.API_ENDPOINT}/api/workouts`, {
       method: "GET",
       headers: {

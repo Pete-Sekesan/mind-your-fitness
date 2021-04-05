@@ -1,6 +1,5 @@
 import React, { Component, Fragment } from "react";
 import TokenService from "../../services/token-service";
-import { API_ENDPOINT } from "../../config";
 import AuthAPIService from "../../services/auth-api-service";
 
 import "./user-login.css";
