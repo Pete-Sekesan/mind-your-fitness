@@ -23,7 +23,7 @@ class Dashboard extends Component {
       <section>
         <div>
           <h3>Logged Workouts</h3>
-          <table>
+          <table className="workout-table">
             <tr>
               <th>Workout</th>
               <th>Duration</th>
