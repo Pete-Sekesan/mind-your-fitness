@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import AuthAPIService from "../../services/auth-api-service";
-import Context from "../../Context";
 import "./dashboard.css";
 
 class Dashboard extends Component {
