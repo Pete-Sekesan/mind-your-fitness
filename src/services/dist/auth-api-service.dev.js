@@ -14,9 +14,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "d
 /* eslint-disable */
 var _default = {
   postUser: function postUser(user) {
-    return fetch("https://cors-anywhere.herokuapp.com/".concat(_config["default"].API_ENDPOINT, "/api/users"), {
+    return fetch("".concat(_config["default"].API_ENDPOINT, "/api/users"), {
       method: "POST",
-      mode: "cors",
       headers: {
         "Content-Type": "application/json"
       },
@@ -32,9 +31,8 @@ var _default = {
 
     var token = "bearer " + _tokenService["default"].hasAuthToken();
 
-    return fetch("https://cors-anywhere.herokuapp.com/".concat(_config["default"].API_ENDPOINT, "/api/workouts"), {
+    return fetch("".concat(_config["default"].API_ENDPOINT, "/api/workouts"), {
       method: "POST",
-      mode: "cors",
       headers: {
         "Content-Type": "application/json",
         Authorization: token
@@ -49,9 +47,8 @@ var _default = {
   getWorkout: function getWorkout(workout) {
     var token = "bearer " + _tokenService["default"].hasAuthToken();
 
-    return fetch("https://cors-anywhere.herokuapp.com/".concat(_config["default"].API_ENDPOINT, "/api/workouts"), {
+    return fetch("".concat(_config["default"].API_ENDPOINT, "/api/workouts"), {
       method: "GET",
-      mode: "cors",
       headers: {
         "Content-Type": "application/json",
         Authorization: token
@@ -64,9 +61,8 @@ var _default = {
     });
   },
   userLogin: function userLogin(user) {
-    return fetch("https://cors-anywhere.herokuapp.com/".concat(_config["default"].API_ENDPOINT, "/api/auth/login"), {
+    return fetch("".concat(_config["default"].API_ENDPOINT, "/api/auth/login"), {
       method: "POST",
-      mode: "cors",
       headers: {
         "Content-Type": "application/json"
       },
