@@ -24,13 +24,12 @@ class Dashboard extends Component {
         <div>
           <h3>Logged Workouts</h3>
           <table>
-            <thread>
-              <tr>
-                <th>Workout</th>
-                <th>Duration</th>
-                <th>Date</th>
-              </tr>
-            </thread>
+            <tr>
+              <th>Workout</th>
+              <th>Duration</th>
+              <th>Date</th>
+            </tr>
+
             <tbody>
               {this.state.workouts.map((workout) => (
                 <tr key={workout.id}>
