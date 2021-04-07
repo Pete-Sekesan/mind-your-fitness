@@ -4,7 +4,6 @@ import Context from "../../Context";
 import "./dashboard.css";
 
 class Dashboard extends Component {
-  static contextType = Context;
   constructor(props) {
     super(props);
     this.state = { workouts: [] };
@@ -37,7 +36,7 @@ class Dashboard extends Component {
               {this.state.workouts.map((workout) => (
                 <tr key={workout.id}>
                   <td>{workout.workout_name}</td>
-                  <td>{workout.duration}</td>
+                  <td>{workout.duration} Minutes</td>
                   <td>{workout.date_created}</td>
                 </tr>
               ))}
