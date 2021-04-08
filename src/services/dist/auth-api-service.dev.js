@@ -65,7 +65,8 @@ var _default = {
       method: "POST",
       headers: {
         "Access-Control-Allow-Origin": "*",
-        "Content-Type": "application/json"
+        "Content-Type": "application/json",
+        Accept: "application/json"
       },
       body: JSON.stringify(user)
     }).then(function (res) {
