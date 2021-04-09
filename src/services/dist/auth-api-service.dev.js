@@ -64,7 +64,8 @@ var _default = {
     return fetch("".concat(_config["default"].API_ENDPOINT, "/api/auth/login"), {
       method: "POST",
       headers: {
-        "Content-Type": "application/json"
+        "Content-Type": "application/json",
+        credentials: "include"
       },
       body: JSON.stringify(user)
     }).then(function (res) {
