@@ -9,13 +9,12 @@ class LandingPage extends Component {
         <h1>Mind Your Fitness</h1>
         <p>Welcome to Mind Your Fitness</p>
         <p>
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum."
+          This app was created to allow users to have a small, standalone
+          application to log and keep track of their exercise's and to view them
+          all in one central location. Setting up an account is easy. Just
+          create a user name and password and you will be able to select from a
+          list of predefined workouts. If you want to take a look around as
+          well, you can log in with our Demo Account to give it a shot.
         </p>
         <br />
         <button className="start-btn">
