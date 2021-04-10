@@ -40,6 +40,11 @@ class UserLogin extends Component {
         <section>
           <div>
             <h1>User Login</h1>
+            <p>
+              Our Demo account login is already in place, but if you need to
+              re-enter the credentials sign in with the user name as Demo and
+              password as Test1234!
+            </p>
             <form className="login-form" onSubmit={this.handleLogin}>
               {this.state.error && <p>{this.state.error}</p>}
               <div>
@@ -61,7 +66,7 @@ class UserLogin extends Component {
                   id="password"
                   required
                   name="password"
-                  defaultValue="P@ssword1234"
+                  defaultValue="Test1234!"
                 />
                 <br />
                 <button type="submit" className="button-login">
