@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import TokenService from "../../services/token-service";
 import "./navbar.css";
 import Context from "../../Context";
+import NavLogo from "../../assets/logos/white_logo_transparent_background.png";
 
 class Navbar extends Component {
   static contextType = Context;
@@ -13,7 +14,11 @@ class Navbar extends Component {
   render() {
     return (
       <nav className="navbar">
-        <Link to="/">Mind Your Fitness</Link>
+        <div className="nav__logo">
+          <Link to="/">
+            <img src={NavLogo} alt="logo" />
+          </Link>
+        </div>
 
         <div>
           <ul>
