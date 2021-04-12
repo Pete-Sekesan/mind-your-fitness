@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
 
 /* Custom Properties */
 :root {
@@ -50,20 +50,19 @@ body {
 
 }
 .landing__logo-container{
-max-width:10000px;
+padding: 2em 2em 2em ;
+    max-width: 1000%;
+    margin: 0 auto;
 
 }
-.landing__logo-container img {
+ .landing__logo-container img {
     height: auto;
     width: auto;
     position: relative;
     align-items: center;
     z-index: 2;
-    opacity: 0.5;
-   
-  
-
-}
+    opacity: 0.4;
+} 
 
 .landing-description{
 display: grid;
@@ -76,10 +75,11 @@ display: grid;
 }
 
 .landing-description__item {
-    background-color: var(--clr-dark);
+    
+    opacity:0.9;
     overflow: hidden;
     padding: 20px;
-    color: var(--clr-light)
+    color: var(--clr-dark)
 
 }
 
@@ -96,26 +96,24 @@ display: grid;
 
 /* Image Text Type */
 
+.type-container{
+    margin: 0 auto;
 
-        .console-container {
-            font-family: 'Open Sans', sans-serif;
-            font-size: 4vw;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
+    position: relative;
+        display: inline-flex;
+        
 
-        .console-underscore {
-            display: inline-block;
-            position: relative;
-            color: white;
-        }
+}
 
-        .container {
-            position: relative;
-            text-align: center;
-        }
-        img {
-            width:100%;
-        }
+.type-container h1{
+        position:absolute;
+        z-index: 999;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        top: 40%; /* Adjust this value to move the positioned div up and down */
+        text-align: center;
+        width: 100%; /* Set the width of the positioned div */
+    }
+
+   
