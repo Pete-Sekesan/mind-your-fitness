@@ -1,7 +1,7 @@
 
 *, *::before, *::after {
 box-sizing: border-box;
-/*outline: 1px dashed #303030;*/
+outline: 1px dashed #303030;
 }
 
 /* Custom Properties */
@@ -12,9 +12,9 @@ box-sizing: border-box;
     --fw-reg:300;
     --fw-bold:900;
 
-    --clr-light:#fff;
-    --clr-dark:#303030;
-    --clr-accent:#8cb369;
+    --clr-light:#e5e5e5;
+    --clr-dark:#14213d;
+    --clr-accent:#F29602;
 
 
     --fs-h1: 3rem;
@@ -46,7 +46,7 @@ html {
 body {
     background: var(--clr-light);
     color: var(var(--clr-dark));
-    margin:0;
+    margin:auto;
     font-family: var(--ff-primary);
     font-size: var(--fs-body);
     line-height: 1.6;
@@ -57,11 +57,11 @@ body {
 section {
     padding: 5em 2em;
     min-height: 200px;
-    background-color: #bbb;
+    
 }
 
 img {
-display: block;    
+   
 max-width: 100%;
 }
 
@@ -143,37 +143,10 @@ font-size: var(--fs-h3);
     margin-bottom: 1em;
 }
 
-/* Navbar */
-nav,
-footer {
-  padding: 1% 0;
-  background-color: #aaa;
-
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.7rem 2rem;
-  z-index: 1;
-  width: 100%;
-  opacity: 0.9;
-  margin-bottom: 1rem;
-}
-
-.navbar ul {
-  display: flex;
-}
-.navbar a {
-  color: #fff;
-  padding: 0.45rem;
-  margin: 0 0.25rem;
-  text-decoration: none;
-}
 
 
-/* Wireframe CSS */
+
+/* Wireframe CSS
 header {
   padding: 45px 15px;
 }
@@ -199,4 +172,4 @@ ul {
    margin: 0;
   padding: 0;
   text-decoration: none;
-}
+} */

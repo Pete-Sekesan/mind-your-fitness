@@ -1,11 +1,11 @@
-.landing__logo {
-    align-items: center;
-}
+
 
 .landing__logo img {
     height: 300px;
     width: 600px;
     position: relative;
+    align-items: center;
+    z-index: 2;
    
   
 
@@ -24,6 +24,7 @@ display: grid;
 .landing-description__item {
     background-color: var(--clr-accent);
     overflow: hidden;
+    padding: 20px;
 
 }
 
@@ -37,8 +38,4 @@ display: grid;
     z-index: 2;
 }
 
-.landing-description__img:hover,
-.landing-description__item:focus .landing-description__img {
-    transform: scale(1.2);
-    opacity: .75;
-}
+
