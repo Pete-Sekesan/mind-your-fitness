@@ -1,11 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+
+/* Custom Properties */
+:root {
+    --ff-primary:'Roboto', sans-serif;
+    --ff-secondary:'Open Sans', sans-serif;
+    
+    --fw-reg:300;
+    --fw-bold:900;
+
+    --clr-light:#fff;
+    --clr-dark:#101010;
+    --clr-accent:#F29602;
 
 
-.landing__logo img {
-    height: 300px;
-    width: 600px;
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.25rem;
+    --fs-body: 1rem;
+
+    --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
+    0.125em 0.125em 0.25em rgba(0,0,0,.15);
+}
+
+@media (min-width: 800px){
+    :root {
+    --fs-h1: 4.5rem;
+    --fs-h2: 3.75rem;
+    --fs-h3: 1.50rem;
+    --fs-body: 1.125rem;
+    }
+}
+
+
+
+/*General Styles */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--clr-light);
+    color: var(var(--clr-dark));
+    margin:auto;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-body);
+    line-height: 1.6;
+    text-align: center;
+
+}
+.landing__logo-container{
+max-width:10000px;
+
+}
+.landing__logo-container img {
+    height: auto;
+    width: auto;
     position: relative;
     align-items: center;
     z-index: 2;
+    opacity: 0.5;
    
   
 
@@ -22,9 +76,10 @@ display: grid;
 }
 
 .landing-description__item {
-    background-color: var(--clr-accent);
+    background-color: var(--clr-dark);
     overflow: hidden;
     padding: 20px;
+    color: var(--clr-light)
 
 }
 
@@ -39,3 +94,28 @@ display: grid;
 }
 
 
+/* Image Text Type */
+
+
+        .console-container {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 4vw;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .console-underscore {
+            display: inline-block;
+            position: relative;
+            color: white;
+        }
+
+        .container {
+            position: relative;
+            text-align: center;
+        }
+        img {
+            width:100%;
+        }
