@@ -1,6 +1,55 @@
+/* Custom Properties */
+:root {
+    --ff-primary:'Roboto', sans-serif;
+    --ff-secondary:'Open Sans', sans-serif;
+    
+    --fw-reg:300;
+    --fw-bold:900;
+
+    --clr-light:#e5e5e5;
+    --clr-dark:#101010;
+    --clr-accent:#F29602;
+
+
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.25rem;
+    --fs-body: 1rem;
+
+    --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
+    0.125em 0.125em 0.25em rgba(0,0,0,.15);
+}
+
+@media (min-width: 800px){
+    :root {
+    --fs-h1: 4.5rem;
+    --fs-h2: 3.75rem;
+    --fs-h3: 1.50rem;
+    --fs-body: 1.125rem;
+    }
+}
+
+
+
+/*General Styles */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--clr-light);
+    color: var(var(--clr-dark));
+    margin:auto;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-body);
+    line-height: 1.6;
+    text-align: center;
+
+}
 .nav__logo img {
-    height: 100px;
-    width: 200px;
+    height: 70px;
+    width: auto;
 }
 
 nav,
@@ -14,19 +63,21 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.7rem 2rem;
+  padding: 0.2rem 3rem;
   z-index: 1;
   width: 100%;
   opacity: 0.9;
   margin-bottom: 1rem;
+  background: var(--clr-dark)
 }
 
 .navbar ul {
   display: flex;
 }
 .navbar a {
-  color: #fff;
-  padding: 0.45rem;
-  margin: 0 0.25rem;
+  color: var(--clr-light);
+  padding: 0.80rem;
+  margin: 0 0.50rem;
   text-decoration: none;
+  
 }

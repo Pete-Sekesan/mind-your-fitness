@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from "react";
 import { Link } from "react-router-dom";
-import Logo from "../../assets/logos/logo_transparent_background.png";
+import Image from "../../assets/images/landing-workout.jpeg";
 
 import "./landing-page.css";
 
@@ -8,8 +8,8 @@ class LandingPage extends Component {
   render() {
     return (
       <Fragment>
-        <div className="landing__logo">
-          <img src={Logo} alt="logo" />
+        <div className="landing__logo-container">
+          <img src={Image} alt="man tieing shoes" />
         </div>
 
         <section className="landing">

@@ -12,8 +12,8 @@ outline: 1px dashed #303030;
     --fw-reg:300;
     --fw-bold:900;
 
-    --clr-light:#e5e5e5;
-    --clr-dark:#14213d;
+    --clr-light:#fff;
+    --clr-dark:#101010;
     --clr-accent:#F29602;
 
 
@@ -129,19 +129,7 @@ font-size: var(--fs-h3);
 
 }
 
-.section__subtitle--intro,
-.section__subtitle--about {
-   background: var(--clr-accent);
-   padding: .25em 1em;
-   font-family: var(--ff-secondary);
-   margin-bottom: 1em;
-}
 
-.section__subtitle--work {
-    color: var(--clr-accent);
-    font-weight: var(--fw-bold);
-    margin-bottom: 1em;
-}
 
 
 
@@ -163,13 +151,11 @@ p {
 p + p {
   margin-top: 15px;
 }
-
+*/
 ul {
    list-style-type: none; 
    padding: 0; 
    margin: 0; 
    display: inline-flex;
-   margin: 0;
-  padding: 0;
   text-decoration: none;
-} */
+} 
