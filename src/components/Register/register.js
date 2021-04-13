@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from "react";
 import AuthAPIService from "../../services/auth-api-service";
-
+import ImageReg from "../../assets/images/register-workout.jpeg";
 import "./register.css";
 
 class Register extends Component {
@@ -28,6 +28,7 @@ class Register extends Component {
       <Fragment>
         <div className="form">
           <h2>Register</h2>
+
           <form className="form-inline" onSubmit={this.handleSubmit}>
             {this.state.error && <p className="error">{this.state.error}</p>}
 

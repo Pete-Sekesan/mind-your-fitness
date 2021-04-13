@@ -54,3 +54,11 @@ transform: scale(1.1);
     margin:20px;
   }
 }
+
+ .form {
+    margin: 0 30px;
+    padding: 0 30px;
+    display: block;
+    border: 3px outset;
+    
+}  

@@ -59,7 +59,9 @@ class LandingPage extends Component {
           </div>
           <br />
           <button className="btn">
-            <Link to="/login">Get Started</Link>
+            <Link to="/login" style={{ textDecoration: "none" }}>
+              Get Started
+            </Link>
           </button>
         </section>
       </Fragment>

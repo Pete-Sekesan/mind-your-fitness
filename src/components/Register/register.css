@@ -55,10 +55,11 @@ transform: scale(1.1);
   }
 }
 
-.form {
+  .form {
     margin: 0 30px;
     padding: 0 30px;
     display: block;
+    border: 3px outset;
+    
+}  
 
-
-}
