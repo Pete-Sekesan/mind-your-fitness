@@ -41,6 +41,7 @@ box-sizing: border-box;
 
 html {
     scroll-behavior: smooth;
+    padding:0; margin:0; height:100%;
 }
 
 body {
@@ -51,6 +52,8 @@ body {
     font-size: var(--fs-body);
     line-height: 1.6;
     text-align: center;
+    padding:0; margin:0; height:100%;
+    position: relative; 
 
 }
 
@@ -71,7 +74,7 @@ strong {
 
 :focus{
     outline: 3px solid var(--clr-accent);
-    outline-offset: 3px;
+    outline-offset: 2px;
 }   
 
 /* Buttons */
@@ -93,6 +96,8 @@ button {
 button:hover{
     transform: scale(1.1)
 }
+
+
 /* Typography */
 
 h1,h2,h3 {
