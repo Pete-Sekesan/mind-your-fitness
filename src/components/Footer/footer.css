@@ -1,7 +1,8 @@
 .footer{
-  position:absolute;
-left:0;
-right:0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;;
 background: var(--clr-dark);
 }
 
