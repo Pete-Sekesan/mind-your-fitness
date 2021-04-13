@@ -37,48 +37,47 @@ class UserLogin extends Component {
   render() {
     return (
       <Fragment>
-        <section>
-          <div>
-            <h1>User Login</h1>
-            <p>
-              Our Demo account login is already in place, but if you need to
-              re-enter the credentials sign in with the user name as Demo and
-              password as Test1234!
-            </p>
-            <form className="login-form" onSubmit={this.handleLogin}>
-              {this.state.error && <p>{this.state.error}</p>}
-              <div>
-                <label htmlFor="username" className="label">
-                  Username:
-                </label>
-                <input
-                  type="text"
-                  required
-                  name="username"
-                  id="username"
-                  defaultValue="Demo"
-                />
-                <label htmlFor="password" className="label">
-                  Password:
-                </label>
-                <input
-                  type="password"
-                  id="password"
-                  required
-                  name="password"
-                  defaultValue="Test1234!"
-                />
-                <br />
-                <button type="submit" className="button-login">
-                  Log In
-                </button>
-                <br />
-                <br />
-                <br />
-              </div>
-            </form>
-          </div>
-        </section>
+        <div className="form">
+          <h2> User Login</h2>
+
+          <p>
+            Our Demo account login is already in place, but if you need to
+            re-enter the credentials sign in with the user name as Demo and
+            password as Test1234!
+          </p>
+          <form className="form-inline" onSubmit={this.handleLogin}>
+            {this.state.error && <p>{this.state.error}</p>}
+            <div>
+              <label htmlFor="username" className="label">
+                Username:
+              </label>
+              <input
+                type="text"
+                required
+                name="username"
+                id="username"
+                defaultValue="Demo"
+              />
+              <label htmlFor="password" className="label">
+                Password:
+              </label>
+              <input
+                type="password"
+                id="password"
+                required
+                name="password"
+                defaultValue="Test1234!"
+              />
+              <br />
+              <button type="submit" className="button-login">
+                Log In
+              </button>
+              <br />
+              <br />
+              <br />
+            </div>
+          </form>
+        </div>
       </Fragment>
     );
   }
