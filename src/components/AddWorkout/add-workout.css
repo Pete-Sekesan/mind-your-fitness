@@ -67,3 +67,8 @@ transform: scale(1.1);
 h2{
   margin:20px
 }
+
+.add-form {
+    border: 1px outset;
+    max-width: 300px;
+}
