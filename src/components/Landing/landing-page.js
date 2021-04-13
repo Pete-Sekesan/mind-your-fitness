@@ -8,13 +8,14 @@ class LandingPage extends Component {
   render() {
     return (
       <Fragment>
-        <div className="landing__logo-container">
-          <div className="type-container">
-            <h1>Welcome to Mind Your Fitness</h1>
+        <section>
+          <div className="landing__logo-container">
+            <div className="type-container">
+              <p>Welcome to Mind Your Fitness</p>
+            </div>
             <img src={Image} alt="man tieing shoes" />
           </div>
-        </div>
-
+        </section>
         <section className="landing">
           <div className="landing-description">
             <article className="landing-description__item">
