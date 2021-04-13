@@ -36,6 +36,7 @@
     letter-spacing: 2px;
     font-weight: var(--fw-bold);
     transition: transform 200ms ease-in-out;
+    margin: 20px 0 0 0;
 }
 
 .form-inline button:hover {

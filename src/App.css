@@ -39,6 +39,9 @@ box-sizing: border-box;
 
 /*General Styles */
 
+.App {
+    position:relative;
+}
 html {
     scroll-behavior: smooth;
     padding:0; margin:0; height:100%;
