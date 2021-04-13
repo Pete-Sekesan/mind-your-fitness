@@ -31,41 +31,39 @@ class AddWorkout extends Component {
   render() {
     return (
       <Fragment>
-        <section>
+        <div>
+          <h1>Add Your Workout</h1>
+        </div>
+
+        <form onSubmit={this.handleSubmit}>
+          <label>Exercise:</label>
+          <select id="workouts" name="workout_name">
+            <option value="Running">Running</option>
+            <option value="Walking">Walking</option>
+            <option value="Hiking">Hiking</option>
+            <option value="Swimming">Swimming</option>
+            <option value="Cycling">Cycling</option>
+            <option value="Spin">Spin</option>
+            <option value="Weightlifting">Weightlifting</option>
+            <option value="Yoga">Yoga</option>
+            <option value="HIIT">HIIT</option>
+            <option value="Elliptical">Elliptical</option>
+            <option value="Other">Other</option>
+          </select>
+
           <div>
-            <h1>Add Your Workout</h1>
+            <label>Duration (in minutes): </label>
+            <input type="number" min="0" required name="duration" />
           </div>
 
-          <form onSubmit={this.handleSubmit}>
-            <label>Exercise:</label>
-            <select id="workouts" name="workout_name">
-              <option value="Running">Running</option>
-              <option value="Walking">Walking</option>
-              <option value="Hiking">Hiking</option>
-              <option value="Swimming">Swimming</option>
-              <option value="Cycling">Cycling</option>
-              <option value="Spin">Spin</option>
-              <option value="Weightlifting">Weightlifting</option>
-              <option value="Yoga">Yoga</option>
-              <option value="HIIT">HIIT</option>
-              <option value="Elliptical">Elliptical</option>
-              <option value="Other">Other</option>
-            </select>
-
-            <div>
-              <label>Duration (in minutes): </label>
-              <input type="number" min="0" required name="duration" />
-            </div>
-
-            <div className="form-group">
-              <label>Date: </label>
-              <input type="date" name="date_created" />
-            </div>
-            <div>
-              <input type="submit" value="Add Workout" />
-            </div>
-          </form>
-        </section>
+          <div className="form-group">
+            <label>Date: </label>
+            <input type="date" name="date_created" />
+          </div>
+          <div>
+            <input type="submit" value="Add Workout" />
+          </div>
+        </form>
       </Fragment>
     );
   }
