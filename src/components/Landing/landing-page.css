@@ -35,6 +35,20 @@
 
 /*General Styles */
 
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--clr-light);
+    color: var(var(--clr-dark));
+    margin:auto;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-body);
+    line-height: 1.6;
+    text-align: center;
+
+}
 .landing__logo-container{
 padding: 1em;
     max-width: 1000%;
@@ -85,6 +99,7 @@ display: grid;
 
  
 
+/* Image Text Type */
 
 
 
