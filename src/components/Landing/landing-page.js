@@ -11,7 +11,7 @@ class LandingPage extends Component {
         <section>
           <div className="landing__logo-container">
             <div className="type-container">
-              <p>Welcome to Mind Your Fitness</p>
+              <h1 className="header-text">Welcome to Mind Your Fitness</h1>
             </div>
             <img src={Image} alt="man tieing shoes" />
           </div>

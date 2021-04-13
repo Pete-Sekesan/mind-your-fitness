@@ -8,6 +8,7 @@ import AddWorkout from "./components/AddWorkout/add-workout";
 import UserLogin from "./components/Login/user-login";
 import LandingPage from "./components/Landing/landing-page";
 import Register from "./components/Register/register";
+import Footer from "./components/Footer/footer";
 
 class App extends Component {
   state = {
@@ -28,6 +29,7 @@ class App extends Component {
             <Route path="/add" component={AddWorkout} />
             <Route path="/login" component={UserLogin} />
             <Route path="/register" component={Register} />
+            <Route path="/" component={Footer} />
           </div>
         </Context.Provider>
       </Fragment>

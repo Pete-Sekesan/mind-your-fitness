@@ -50,7 +50,7 @@ body {
 
 }
 .landing__logo-container{
-
+padding: 1em;
     max-width: 1000%;
     margin: 0 auto;
     font-family: Courier, monospace;
@@ -74,6 +74,8 @@ display: grid;
   grid-column-gap: 20px;
   grid-row-gap: 20px;
   grid-column: 1;
+  border: 3px groove;
+  padding: 20px;
 }
 
 .landing-description__item {

@@ -1,0 +1,21 @@
+.footer{
+    display: flex;
+  background: var(--clr-dark);
+  justify-content: center;
+  align-items: center;
+  padding: 0.7rem 2rem;
+  z-index: 1;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.footer a {
+  color: #fff;
+  padding: 0.45rem;
+  margin: 0 0.25rem;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: var(--clr-accent);
+}
