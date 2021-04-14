@@ -17,7 +17,7 @@ select:not([multiple]) {
 }
 
 .form-inline {
-  display: flex;
+  display: inline-block;
   flex-flow: column;
   align-items: stretch;
   margin: 40px 100px;
