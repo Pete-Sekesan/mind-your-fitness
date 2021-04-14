@@ -35,7 +35,7 @@ class AddWorkout extends Component {
           <h1>Add Your Workout</h1>
         </div>
 
-        <div className="add-form">
+        <div className="form">
           <form className="form-inline" onSubmit={this.handleSubmit}>
             <label>Exercise:</label>
             <select id="workouts" name="workout_name">
