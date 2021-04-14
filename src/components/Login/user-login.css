@@ -1,5 +1,5 @@
 .form-inline {
-  display: flex;
+  display: inline-grid;
   flex-flow: column;
   align-items: stretch;
   margin: 40px 100px;
@@ -69,4 +69,11 @@ transform: scale(1.1);
 
 h2{
   margin:20px
+}
+
+.login-instructions{
+    flex-direction: column;
+    align-items: stretch;
+    margin:20px;
+  
 }

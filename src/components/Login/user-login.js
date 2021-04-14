@@ -39,12 +39,13 @@ class UserLogin extends Component {
       <Fragment>
         <div className="form">
           <h2> User Login</h2>
-
-          <p>
-            Our Demo account login is already in place, but if you need to
-            re-enter the credentials sign in with the user name as Demo and
-            password as Test1234!
-          </p>
+          <div className="login-instructions">
+            <p>
+              Our Demo account login is already in place, but if you need to
+              re-enter the credentials sign in with the user name as Demo and
+              password as Test1234!
+            </p>
+          </div>
           <form className="form-inline" onSubmit={this.handleLogin}>
             {this.state.error && <p>{this.state.error}</p>}
             <div className="form-label">
