@@ -59,7 +59,7 @@ transform: scale(1.1);
  .form {
     margin: 0 30px;
     padding: 0 30px;
-    display: block;
+    display: inline-grid;
     border: 3px outset;
     
 }  
