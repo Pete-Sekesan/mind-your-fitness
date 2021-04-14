@@ -10,24 +10,24 @@ class UserLogin extends Component {
   };
 
   handleLogin = (e) => {
-    console.log("before prevent");
+    //console.log("before prevent");
     e.preventDefault();
-    console.log("after prevent");
+    // console.log("after prevent");
     const { username, password } = e.target;
     const user = {
       username: username.value,
       password: password.value,
     };
-    console.log("*****" + username.value + "***" + password.value);
+    //console.log("*****" + username.value + "***" + password.value);
 
     this.setState({ error: null });
     AuthAPIService.userLogin(user)
       .then((loginResponse) => {
-        console.log("beforetoken");
+        //console.log("beforetoken");
         TokenService.saveAuthToken(loginResponse.authToken);
-        console.log("after token");
+        //console.log("after token");
         this.props.history.push("/dashboard");
-        console.log("after dashboard push");
+        //console.log("after dashboard push");
       })
       .catch((res) => {
         this.setState({ error: res.error });
