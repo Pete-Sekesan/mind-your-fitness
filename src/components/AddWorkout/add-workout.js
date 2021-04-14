@@ -62,7 +62,7 @@ class AddWorkout extends Component {
               <input type="date" name="date_created" />
             </div>
             <div>
-              <input type="submit" value="Add Workout" />
+              <button type="submit" value="Add Workout" />
             </div>
           </form>
         </div>
