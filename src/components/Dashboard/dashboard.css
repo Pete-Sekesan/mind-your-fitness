@@ -5,3 +5,7 @@
 .workout-container {
     display: grid;
 }
+
+table, th, td {
+  border: 1px solid black;
+}

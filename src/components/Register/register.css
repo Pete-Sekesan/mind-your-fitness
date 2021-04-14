@@ -1,5 +1,5 @@
 .form-inline {
-  display: flex;
+  display: inline-grid;
   flex-flow: column;
   align-items: stretch;
   margin: 40px 100px;

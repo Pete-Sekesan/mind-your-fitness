@@ -63,6 +63,9 @@ transform: scale(1.1);
     border: 3px outset;
     
 }  
+.form-label {
+  display: inline-grid;
+}
 
 h2{
   margin:20px

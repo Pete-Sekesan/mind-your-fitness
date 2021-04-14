@@ -97,8 +97,29 @@ display: grid;
     z-index: 2;
 }
 
- 
 
+ button {
+     display: inline-block;
+    padding: .5em 2.5em;
+    background: var(--clr-accent);
+    color: var(--clr-dark);
+    text-decoration: none;
+    cursor: pointer;
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: var(--fw-bold);
+    transition: transform 200ms ease-in-out;
+    margin: 20px 0 0 0;
+    
+ }
+
+ button a {
+  color: #fff;
+  padding: 0.45rem;
+  margin: 0 0.25rem;
+  text-decoration: none;
+}
 /* Image Text Type */
 
 
