@@ -55,11 +55,14 @@ padding: 1em;
     margin: 0 auto;
     font-family: Courier, monospace;
 	display: block;
+    position: relative;
+    text-align: center;
+
 
 }
  .landing__logo-container img {
     height: auto;
-    width: auto;
+    width: 100%;
     position: relative;
     align-items: center;
     z-index: 2;
@@ -121,12 +124,22 @@ display: grid;
   text-decoration: none;
 }
 /* Image Text Type */
+.header-text {
+    position:absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
+}
 
 
   @media (max-width: 400px) {
     .landing-description__item{
         margin:5px 31px 5px 0;
+    }
+    
+    :root{
+        --fs-h1: 2.5rem;
     }
   }
    

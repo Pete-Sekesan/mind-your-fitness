@@ -6,12 +6,10 @@ import "./add-workout.css";
 class AddWorkout extends Component {
   static contextType = Context;
   handleSubmit = (e) => {
-    console.log("This is handle submit");
+    //console.log("This is handle submit");
     e.preventDefault();
     const { workout_name, duration, date_created } = e.target;
-    console.log(
-      "Handle submit" + workout_name.value + duration.value + date_created.value
-    );
+    //console.log( "Handle submit" + workout_name.value + duration.value + date_created.value);
 
     AuthAPIService.postWorkout({
       workout_name: workout_name.value,
@@ -24,7 +22,7 @@ class AddWorkout extends Component {
       })
       .catch((res) => {
         this.setState({ error: res.error });
-        console.log("catch looking for anything");
+        //console.log("catch looking for anything");
       });
   };
 
