@@ -1,3 +1,7 @@
 .workout-table {
     text-align: center;
 }
+
+.workout-container {
+    display: grid;
+}
