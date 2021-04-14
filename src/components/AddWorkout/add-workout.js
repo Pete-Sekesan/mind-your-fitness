@@ -35,8 +35,8 @@ class AddWorkout extends Component {
           <h1>Add Your Workout</h1>
         </div>
 
-        <form className="form-inline" onSubmit={this.handleSubmit}>
-          <div className="add-form">
+        <div className="add-form">
+          <form className="form-inline" onSubmit={this.handleSubmit}>
             <label>Exercise:</label>
             <select id="workouts" name="workout_name">
               <option value="Running">Running</option>
@@ -64,8 +64,8 @@ class AddWorkout extends Component {
             <div>
               <input type="submit" value="Add Workout" />
             </div>
-          </div>
-        </form>
+          </form>
+        </div>
       </Fragment>
     );
   }
