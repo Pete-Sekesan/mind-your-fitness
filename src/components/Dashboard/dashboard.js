@@ -21,8 +21,8 @@ class Dashboard extends Component {
   render() {
     return (
       <section>
-        <div>
-          <h3>Logged Workouts</h3>
+        <div className="workout-container">
+          <h2>Logged Workouts</h2>
           <table className="workout-table">
             <tr>
               <th>Workout</th>
