@@ -32,7 +32,7 @@ class AddWorkout extends Component {
     return (
       <Fragment>
         <div>
-          <h1>Add Your Workout</h1>
+          <h2>Add Your Workout</h2>
         </div>
 
         <div className="form">
