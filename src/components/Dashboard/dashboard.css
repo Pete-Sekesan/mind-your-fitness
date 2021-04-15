@@ -1,14 +1,12 @@
 .workout-table {
     text-align: center;
-    
 }
 
 .workout-container {
-   margin: 0 30px;
+    display: grid;
+    margin: 0 30px;
     padding: 0 30px;
-    display: block;
     
-
 }
 
 table, th, td {
