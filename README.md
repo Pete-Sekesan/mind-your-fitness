@@ -55,23 +55,23 @@ Once logged in for the first time, go ahead and select the "Add Workout" option.
 
 ### Landing page desktop view
 
-<img src="images/landing-desktop.png" alt="Logo" width="600" height="300">
+<img src="images/landing-desktop.png" alt="Logo" width="400" height="300">
 
 ### Register page mobile view
 
-<img src="images/register-mobile.jpeg" alt="Logo" width="300" height="600">
+<img src="images/register-mobile.jpeg" alt="Logo" width="200" height="400">
 
 ### Login page mobile view
 
-<img src="images/login-mobile.jpeg" alt="Logo" width="300" height="600">
+<img src="images/login-mobile.jpeg" alt="Logo" width="200" height="400">
 
 ### Add workout page mobile view
 
-<img src="images/add-mobile.jpeg" alt="Logo" width="300" height="600">
+<img src="images/add-mobile.jpeg" alt="Logo" width="200" height="400">
 
 ### User dashboard page desktop view
 
-<img src="images/dash-desktop.png" alt="Logo" width="600" height="300">
+<img src="images/dash-desktop.png" alt="Logo" width="400" height="250">
 ## Roadmap
 
 See the [open issues](https://github.com/Pete-Sekesan/mind-your-fitness/issues) for a list of proposed features (and known issues).
