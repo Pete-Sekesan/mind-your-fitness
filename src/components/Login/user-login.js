@@ -1,39 +1,29 @@
 import React, { Component, Fragment } from "react";
 import TokenService from "../../services/token-service";
 import AuthAPIService from "../../services/auth-api-service";
-import Spinner from "../Layout/Spinner";
 
 import "./user-login.css";
 
 class UserLogin extends Component {
   state = {
     error: null,
-    loading: false,
-  };
-
-  setLoading = () => {
-    this.setState({ loading: true });
   };
 
   handleLogin = (e) => {
-    //console.log("before prevent");
     e.preventDefault();
-    // console.log("after prevent");
+
     const { username, password } = e.target;
     const user = {
       username: username.value,
       password: password.value,
     };
-    //console.log("*****" + username.value + "***" + password.value);
 
     this.setState({ error: null });
     AuthAPIService.userLogin(user)
       .then((loginResponse) => {
-        //console.log("beforetoken");
         TokenService.saveAuthToken(loginResponse.authToken);
-        //console.log("after token");
+
         this.props.history.push("/dashboard");
-        //console.log("after dashboard push");
       })
       .catch((res) => {
         this.setState({ error: res.error });
@@ -77,9 +67,6 @@ class UserLogin extends Component {
               />
               <br />
               <button type="submit" className="button-login">
-                {this.state.loading && (
-                  <Spinner animation="border" role="status"></Spinner>
-                )}
                 Log In
               </button>
               <br />

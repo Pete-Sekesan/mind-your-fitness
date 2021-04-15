@@ -27,8 +27,6 @@ var _default = {
     });
   },
   postWorkout: function postWorkout(workout) {
-    console.log("inside post workout" + JSON.stringify(workout));
-
     var token = "bearer " + _tokenService["default"].hasAuthToken();
 
     return fetch("".concat(_config["default"].API_ENDPOINT, "/api/workouts"), {

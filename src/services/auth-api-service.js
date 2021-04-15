@@ -16,7 +16,6 @@ export default {
   },
 
   postWorkout(workout) {
-    console.log("inside post workout" + JSON.stringify(workout));
     const token = "bearer " + TokenService.hasAuthToken();
     return fetch(`${config.API_ENDPOINT}/api/workouts`, {
       method: "POST",
