@@ -20,28 +20,26 @@ class Dashboard extends Component {
 
   render() {
     return (
-      <section>
-        <div className="workout-container">
-          <h2>Logged Workouts</h2>
-          <table className="workout-table">
-            <tr>
-              <th>Workout</th>
-              <th>Duration</th>
-              <th>Date</th>
-            </tr>
+      <div className="workout-container">
+        <h2>Logged Workouts</h2>
+        <table className="workout-table">
+          <tr>
+            <th>Workout</th>
+            <th>Duration</th>
+            <th>Date</th>
+          </tr>
 
-            <tbody>
-              {this.state.workouts.map((workout) => (
-                <tr key={workout.id}>
-                  <td>{workout.workout_name}</td>
-                  <td>{workout.duration} Minutes</td>
-                  <td>{new Date(workout.date_created).toLocaleDateString()}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      </section>
+          <tbody>
+            {this.state.workouts.map((workout) => (
+              <tr key={workout.id}>
+                <td>{workout.workout_name}</td>
+                <td>{workout.duration} Minutes</td>
+                <td>{new Date(workout.date_created).toLocaleDateString()}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
     );
   }
 }
