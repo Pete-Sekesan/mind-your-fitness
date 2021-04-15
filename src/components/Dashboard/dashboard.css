@@ -4,6 +4,9 @@
 
 .workout-container {
     display: grid;
+    margin: 0 30px;
+    padding: 0 30px;
+    
 }
 
 table, th, td {
