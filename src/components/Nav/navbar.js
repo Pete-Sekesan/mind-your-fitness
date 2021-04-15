@@ -7,7 +7,7 @@ import NavLogo from "../../assets/logos/white_logo_transparent_background.png";
 
 class Navbar extends Component {
   static contextType = Context;
-
+  //clears bearer token on logout
   logout = () => {
     TokenService.clearAuthToken();
   };
@@ -22,6 +22,7 @@ class Navbar extends Component {
 
         <div>
           <ul>
+            {/* if a token is present, display the following links*/}
             {TokenService.hasAuthToken() ? (
               <Fragment>
                 <li>
@@ -39,6 +40,7 @@ class Navbar extends Component {
                 </li>
               </Fragment>
             ) : (
+              //if no token is present, show the following links
               <Fragment>
                 <li>
                   <Link to="/login">Log In</Link>

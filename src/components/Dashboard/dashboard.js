@@ -17,7 +17,7 @@ class Dashboard extends Component {
         this.setState({ error: res.error });
       });
   }
-
+  //displays a table via JSX to
   render() {
     return (
       <Fragment>
@@ -37,6 +37,7 @@ class Dashboard extends Component {
                 <tr key={workout.id}>
                   <td>{workout.workout_name}</td>
                   <td>{workout.duration} Minutes</td>
+                  {/*takes date input and removes the time stamp for display*/}
                   <td>{new Date(workout.date_created).toLocaleDateString()}</td>
                 </tr>
               ))}

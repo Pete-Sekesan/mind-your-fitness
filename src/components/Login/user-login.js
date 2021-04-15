@@ -19,8 +19,10 @@ class UserLogin extends Component {
     };
 
     this.setState({ error: null });
+    //locates the user in the database
     AuthAPIService.userLogin(user)
       .then((loginResponse) => {
+        //creates and stores a bearer token in local storage
         TokenService.saveAuthToken(loginResponse.authToken);
 
         this.props.history.push("/dashboard");

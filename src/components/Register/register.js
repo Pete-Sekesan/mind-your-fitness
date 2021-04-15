@@ -1,6 +1,5 @@
 import React, { Component, Fragment } from "react";
 import AuthAPIService from "../../services/auth-api-service";
-import ImageReg from "../../assets/images/register-workout.jpeg";
 import "./register.css";
 
 class Register extends Component {
@@ -12,16 +11,19 @@ class Register extends Component {
     e.preventDefault();
     const { username, password, confirmPassword } = e.target;
     this.setState({ error: null });
-    AuthAPIService.postUser({
-      username: username.value,
-      password: password.value,
-    })
-      .then((user) => {
-        this.props.history.push("/login");
+    //if passwords match, create the user
+    if (password.value === confirmPassword.value) {
+      AuthAPIService.postUser({
+        username: username.value,
+        password: password.value,
       })
-      .catch((res) => {
-        this.setState({ error: res.error });
-      });
+        .then((user) => {
+          this.props.history.push("/login");
+        })
+        .catch((res) => {
+          this.setState({ error: res.error });
+        });
+    }
   };
   render() {
     return (

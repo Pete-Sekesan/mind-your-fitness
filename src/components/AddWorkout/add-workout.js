@@ -8,7 +8,7 @@ class AddWorkout extends Component {
   handleSubmit = (e) => {
     e.preventDefault();
     const { workout_name, duration, date_created } = e.target;
-
+    // Takes entry data and uses the auth token for validation
     AuthAPIService.postWorkout({
       workout_name: workout_name.value,
       duration: duration.value,
