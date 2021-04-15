@@ -1,70 +1,88 @@
-# Getting Started with Create React App
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+  <a href="https://peter-sekesan.dev/">
+    <img src="images/Logo-03.png" alt="Logo" width="200" height="160">
+  </a>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  <h3 align="center">Mind Your Fitness</h3>
 
-## Available Scripts
+  <p align="center">
+    A simple exercise logging application.
+    <br />
+    <br />
+    <a href="https://mind-your-fitness.vercel.app/">View Demo</a>
+    ·
+    <a href="https://github.com/Pete-Sekesan/mind-your-fitness/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/Pete-Sekesan/mind-your-fitness/issues">Request Feature</a>
+  </p>
+</p>
 
-In the project directory, you can run:
+<!-- ABOUT THE PROJECT -->
 
-### `npm start`
+## About The Project
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<p align="left">
+  <a href="https://mind-your-fitness.vercel.app/">
+    <img src="images/logo_transparent_background.png" alt="Logo" width="200" height="100">
+  </a>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+This app was created to allow users to have a small, standalone application to log and keep track of their exercise's and to view them all in one central location. Setting up an account is easy. Just create a user name and password and you will be able to select from a list of predefined workouts. If you want to take a look around as well, you can log in with our Demo Account to give it a shot.
 
-### `npm test`
+### Built With
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [JavaScript](https://www.javascript.com/)
+- [React](https://reactjs.org/docs/getting-started.html)
+- [Node.js](https://nodejs.org/en/docs/)
+- [Express](https://expressjs.com/)
+- [PostgreSQL](https://www.postgresql.org/)
+- [Knex](http://knexjs.org/)
 
-### `npm run build`
+<!-- USAGE EXAMPLES -->
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Usage
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Once logged in for the first time, go ahead and select the "Add Workout" option. From there, you can select from a predetermined set of popular exercises. Once you have selected the chosen workout, enter the amount of time you worked out for in minutes. Finally, go ahead a select the date it was done on. You can even go back and add workouts from prior days in the year. Enjoy!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<!-- ROADMAP -->
 
-### `npm run eject`
+<!-- SCREEN SHOTS -->
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Screen Shots
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Landing page desktop view
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+<img src="images/landing-desktop.png" alt="Logo" width="600" height="300">
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Register page mobile view
 
-## Learn More
+<img src="images/register-mobile.jpeg" alt="Logo" width="300" height="600">
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Login page mobile view
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<img src="images/login-mobile.jpeg" alt="Logo" width="300" height="600">
 
-### Code Splitting
+### Add workout page mobile view
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<img src="images/add-mobile.jpeg" alt="Logo" width="300" height="600">
 
-### Analyzing the Bundle Size
+### User dashboard page desktop view
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+<img src="images/dash-desktop.png" alt="Logo" width="600" height="300">
+## Roadmap
 
-### Making a Progressive Web App
+See the [open issues](https://github.com/Pete-Sekesan/mind-your-fitness/issues) for a list of proposed features (and known issues).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Contact
 
-### Advanced Configuration
+Twitter - [@PeterSekesan](https://twitter.com/PeterSekesan)  
+psekesan@gmail.com
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Portfolio: https://peter-sekesan.dev
 
-### Deployment
+Project Link: [https://github.com/Pete-Sekesan/mind-your-fitness](https://github.com/Pete-Sekesan/mind-your-fitness)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Project API Link: [https://github.com/Pete-Sekesan/mind-your-fitness-api](https://github.com/Pete-Sekesan/mind-your-fitness-api)
