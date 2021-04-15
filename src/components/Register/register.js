@@ -23,6 +23,8 @@ class Register extends Component {
         .catch((res) => {
           this.setState({ error: res.error });
         });
+    } else {
+      alert("Passwords do not match");
     }
   };
   render() {
