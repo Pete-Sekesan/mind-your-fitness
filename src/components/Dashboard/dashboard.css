@@ -3,7 +3,7 @@
 }
 
 .workout-container {
-    display: grid;
+    display: flex;
     margin: 0 30px;
     padding: 0 30px;
     
