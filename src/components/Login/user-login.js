@@ -52,10 +52,7 @@ class UserLogin extends Component {
               password as Test1234!
             </p>
           </div>
-          <form
-            className="form-inline"
-            onSubmit={this.handleLogin & this.setLoading}
-          >
+          <form className="form-inline" onSubmit={this.handleLogin}>
             {this.state.error && <p>{this.state.error}</p>}
             <div className="form-label">
               <label htmlFor="username" className="label">
