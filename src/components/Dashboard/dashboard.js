@@ -35,7 +35,7 @@ class Dashboard extends Component {
                 <tr key={workout.id}>
                   <td>{workout.workout_name}</td>
                   <td>{workout.duration} Minutes</td>
-                  <td>{workout.date_created}</td>
+                  <td>{new Date(workout.date_created).toLocaleDateString()}</td>
                 </tr>
               ))}
             </tbody>
