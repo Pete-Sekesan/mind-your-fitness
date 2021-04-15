@@ -54,7 +54,7 @@ class UserLogin extends Component {
           </div>
           <form
             className="form-inline"
-            onSubmit={(this.handleLogin, this.setLoading)}
+            onSubmit={this.handleLogin & this.setLoading}
           >
             {this.state.error && <p>{this.state.error}</p>}
             <div className="form-label">
