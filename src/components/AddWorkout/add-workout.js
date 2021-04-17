@@ -49,7 +49,7 @@ class AddWorkout extends Component {
 
             <div>
               <label>Duration (in minutes): </label>
-              <input type="number" min="0" required name="duration" />
+              <input type="number" min="0" max="300" required name="duration" />
             </div>
 
             <div className="form-group">
