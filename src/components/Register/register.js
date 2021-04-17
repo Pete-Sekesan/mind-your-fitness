@@ -34,7 +34,9 @@ class Register extends Component {
           <h2>Register</h2>
 
           <form className="form-inline" onSubmit={this.handleSubmit}>
-            {this.state.error && <p className="error">{this.state.error}</p>}
+            {this.state.error && (
+              <p className="error-text">{this.state.error}</p>
+            )}
 
             <label>Username:</label>
             <input type="text" required name="username" id="username" />
