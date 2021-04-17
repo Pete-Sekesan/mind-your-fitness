@@ -132,3 +132,7 @@ ul {
    display: inline-flex;
   text-decoration: none;
 } 
+
+.error{
+    color: red;
+}
