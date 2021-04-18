@@ -13,3 +13,9 @@
 table, th, td {
   border: 1px solid black;
 }
+
+@media (max-width: 330px) {
+  .workout-table{
+    margin: 0 0 0 -29px;
+  }
+}

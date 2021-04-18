@@ -135,7 +135,7 @@ display: grid;
 
   @media (max-width: 400px) {
     .landing-description__item{
-        margin:5px 31px 5px 0;
+        margin:5px 43px 5px 0;
     }
     
     :root{
@@ -143,3 +143,18 @@ display: grid;
     }
   }
    
+
+  @media (max-width: 320px) {
+    .landing-description__item{
+        margin:5px 83px 5px 0;
+        display:grid;
+    }
+    
+    :root{
+        --fs-h1: 1.7rem;
+    }
+  }
+
+  ul{
+      display: grid;
+  }
